@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analizador de Postura</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Librerías de MediaPipe -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main>
+    <h1>Analizador de Postura</h1>
+    <p class="instruction">Permite el uso de la cámara y colócate de lado.</p>
+
+    <section class="container">
+      <h2 id="posture-status">Cargando cámara...</h2>
+      <video class="input_video" autoplay muted playsinline></video>
+      <canvas class="output_canvas" width="1280" height="720"></canvas>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
